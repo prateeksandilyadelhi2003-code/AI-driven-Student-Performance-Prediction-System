@@ -1,0 +1,118 @@
+{
+    "best_regression_model": "Linear Regression",
+    "regression_results": {
+        "Linear Regression": {
+            "MAE": 3.2817,
+            "MSE": 16.5145,
+            "RMSE": 4.0638,
+            "R2_Score": 0.8255
+        },
+        "Random Forest Regressor": {
+            "MAE": 3.3887,
+            "MSE": 17.4614,
+            "RMSE": 4.1787,
+            "R2_Score": 0.8155
+        }
+    },
+    "best_classification_model": "Logistic Regression",
+    "classification_results": {
+        "Logistic Regression": {
+            "Accuracy": 0.9,
+            "Precision": 0.8987,
+            "Recall": 0.9,
+            "F1_Score": 0.8943,
+            "Confusion_Matrix": [
+                [
+                    7,
+                    6,
+                    0
+                ],
+                [
+                    1,
+                    178,
+                    4
+                ],
+                [
+                    0,
+                    13,
+                    31
+                ]
+            ]
+        },
+        "Decision Tree": {
+            "Accuracy": 0.8375,
+            "Precision": 0.8296,
+            "Recall": 0.8375,
+            "F1_Score": 0.8256,
+            "Confusion_Matrix": [
+                [
+                    6,
+                    7,
+                    0
+                ],
+                [
+                    4,
+                    173,
+                    6
+                ],
+                [
+                    0,
+                    22,
+                    22
+                ]
+            ]
+        },
+        "Random Forest Classifier": {
+            "Accuracy": 0.8917,
+            "Precision": 0.8964,
+            "Recall": 0.8917,
+            "F1_Score": 0.8811,
+            "Confusion_Matrix": [
+                [
+                    5,
+                    8,
+                    0
+                ],
+                [
+                    0,
+                    180,
+                    3
+                ],
+                [
+                    0,
+                    15,
+                    29
+                ]
+            ]
+        }
+    },
+    "labels": [
+        "Low",
+        "Average",
+        "High"
+    ],
+    "feature_names": [
+        "attendance",
+        "previous_marks",
+        "study_hours",
+        "assignment_score",
+        "internal_marks",
+        "completed_assignments",
+        "class_participation",
+        "extracurricular_activity"
+    ],
+    "feature_importances": {
+        "regression": {
+            "attendance": 1.8413,
+            "previous_marks": 3.7278,
+            "study_hours": 1.1757,
+            "assignment_score": 1.7299,
+            "internal_marks": 2.944,
+            "completed_assignments": 0.7832,
+            "class_participation": 0.3716,
+            "extracurricular_activity": 1.2325
+        }
+    },
+    "test_sample_count": 240,
+    "train_sample_count": 960
+}
